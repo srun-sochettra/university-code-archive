@@ -4,8 +4,8 @@ import 'package:flutter_sem3/apps/my_app.dart';
 import 'package:flutter_sem3/providers/color_notifier_provider.dart';
 import 'package:flutter_sem3/providers/theme_notifier_provider.dart';
 
-class SettingScreen extends ConsumerWidget {
-  const SettingScreen({super.key});
+class SettingsScreen extends ConsumerWidget {
+  const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

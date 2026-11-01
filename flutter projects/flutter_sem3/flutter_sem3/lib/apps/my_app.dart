@@ -1,9 +1,11 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sem3/providers/color_notifier_provider.dart';
-import 'package:flutter_sem3/providers/theme_notifier_provider.dart';
-import 'package:flutter_sem3/screens/detail_screen.dart';
-import 'package:flutter_sem3/screens/main_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../screens/student_add_screen.dart';
+import '../screens/detail_screen.dart';
+
+import '../providers/color_notifier_provider.dart';
+import '../providers/theme_notifier_provider.dart';
+import '../screens/main_screen.dart';
 
 List<Color> colorList = [
   Colors.yellow,
@@ -33,6 +35,7 @@ class MyApp extends ConsumerWidget {
     Color seedColor = colorList[index];
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       themeMode: dark ? .dark : .light,
       theme: ThemeData(
         brightness: .light,
@@ -48,9 +51,13 @@ class MyApp extends ConsumerWidget {
           case '/':
             return MaterialPageRoute(builder: (context) => MainScreen());
           case '/detail':
-            return MaterialPageRoute(
+            return MaterialPageRoute( 
               builder: (context) => DetailScreen(),
               settings: settings,
+            );
+          case '/add':
+            return MaterialPageRoute( 
+              builder: (context) => StudentAddScreen(),
             );
           default:
             return MaterialPageRoute(
