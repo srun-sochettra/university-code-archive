@@ -1,3 +1,6 @@
 [submodule "flutter projects/Flutter---Semester-2"]
 	path = flutter projects/Flutter---Semester-2
 	url = https://github.com/SRUN-Sochettra/flutter-course-semester-2.git
+[submodule "flutter projects/flutter_sem3/flutter_sem3"]
+	path = flutter projects/flutter_sem3/flutter_sem3
+	url = https://github.com/srun-sochettra/flutter-meal-student.git
