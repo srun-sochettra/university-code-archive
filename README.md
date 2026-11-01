@@ -11,7 +11,7 @@ This repository is an academic archive rather than one deployable product. Each 
 | Project | Source-backed scope |
 | --- | --- |
 | `flutter projects/flutter_final_exam_sem2` | Glass-styled user browser backed by Fake Store API user data, profile details and theme switching |
-| `flutter projects/flutter_sem3/flutter_sem3` | Seafood-meal browser using TheMealDB, Riverpod, cached images, details, settings and persistent navigation |
+| `flutter projects/flutter_sem3/flutter_sem3` | Git submodule pointing to the separate `flutter-meal-student` repository: TheMealDB browser plus student CRUD client |
 | `flutter projects/game_giveaways/game_giveaways` | LootDrop giveaway catalogue using GamerPower, Riverpod, local search/filtering, details and appearance settings |
 | `flutter projects/nham24` | Food-delivery interface study with restaurant/menu browsing and an in-memory cart; checkout remains a placeholder |
 | `flutter projects/flutter_application_1` | Smaller Flutter UI/coursework exercises |
@@ -33,7 +33,7 @@ Notebooks are binary/JSON-heavy learning artefacts. Their presence is not a fres
 
 ## Working with the archive
 
-Clone with submodules if you need the separately hosted semester-two Flutter material:
+Clone with submodules if you need the separately hosted semester-two and semester-three Flutter material:
 
 ```sh
 git clone --recurse-submodules <repository-url>
